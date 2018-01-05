@@ -1,12 +1,12 @@
-Take age in years and convert to seconds
-Take two dates and determine the difference between the two (in seconds)
-Return age of a person in Mercury years (.24 Earth years)
-Return age of a person in Venus years (.62 Earth years)
-Return age of a person in Mars years (1.88 Earth years)
-Return age of a person in Jupiter years (11.86 Earth years)
-Determine how many years a user has left to live on each planet
-  Calculate life expectancy - shouldn't be hard-coded
-If user has surpassed average life expectancy, account for and test for the potential outcome as well
+~ Take age in years and convert to seconds
+~ Take two dates and determine the difference between the two (in seconds)
+~ Return age of a person in Mercury years (.24 Earth years)
+~ Return age of a person in Venus years (.62 Earth years)
+~ Return age of a person in Mars years (1.88 Earth years)
+~ Return age of a person in Jupiter years (11.86 Earth years)
+~ Determine how many years a user has left to live on each planet
+  ~ Calculate life expectancy - shouldn't be hard-coded
+~ If user has surpassed average life expectancy, account for and test for the potential outcome as well
 
 FURTHER EXPLORATION
 Return date of user's next birthday on each planet
