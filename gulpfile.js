@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserify = require('browserify');
+var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -18,13 +19,14 @@ var lib = require('bower-files')({
     }
   }
 });
+var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
-  .pipe(jshint())
-  .pipe(jshint.reporter('default'));
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
 
 gulp.task('concatInterface', function(){
@@ -33,8 +35,11 @@ gulp.task('concatInterface', function(){
     .pipe(gulp.dest('./tmp'));
 });
 
-gulp.task('jsBrowserify', function() {
+gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js']})
+  .transform(babelify.configure({
+    presets: ["es2015"]
+  }))
   .bundle()
   .pipe(source('app.js'))
   .pipe(gulp.dest('./build/js'));
