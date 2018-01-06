@@ -1,10 +1,9 @@
-import {PlanetaryConversion} from "./../js/calculations.js";
+// import {PlanetaryConversion} from "./../js/calculations.js";
 
 $(document).ready(function(){
   $(".results").hide();
   $(".user-info").submit(function(event) {
     event.preventDefault();
-
     // Get current time
     // $("#current-time").text(moment());
 
@@ -18,6 +17,11 @@ $(document).ready(function(){
     let ageSeconds = age * 31536000;
 
     $(".user-info").hide();
+
+    let ageMercury = ageSeconds * .24;
+    let ageVenus = ageSeconds * .62;
+    let ageMars = ageSeconds * 1.88;
+    let ageJupiter = ageSeconds * 11.86;
 
     let resultsReveal = `${ageMercury} seconds old on Mercury, but ${ageVenus} seconds old on Venus, ${ageMars} seconds old on Mars, and ${ageJupiter} seconds old on Jupiter.`
     $(".results").append(resultsReveal);
