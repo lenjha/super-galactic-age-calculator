@@ -9,9 +9,25 @@
     <title>SUPER MEGA GALACTIC AGE CALCULATOR</title>
   </head>
   <body>
-    <form class="user-info">      
-      <input type="number" placeholder="How old are you in Earth years?" id="user-age">
-      <button type="submit" name="button">CALCULATE!</button>
-    </form>
+
+    <div class="container">
+      <div class="time-display">
+        <h2>The current time is:</h2>
+        <h4 id="current-time"></h4>
+      </div>
+
+      <form class="user-info">
+        <input type="number" placeholder="How old are you in Earth years?" id="user-age">
+        <br>
+        <!-- <input type="radio" name="smoking" value="yes" id="smoker">Yes
+        <input type="radio" name="smoking" value="no" id="not-a-smoker">No -->
+        <br><br>
+        <button type="submit" name="button">CALCULATE!</button>
+      </form>
+
+      <div class="results">
+        <h4>You would be:</h4>
+      </div>
+    </div>
   </body>
 </html>

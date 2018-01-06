@@ -22,6 +22,7 @@ var lib = require('bower-files')({
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var moment = require('moment');
 
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
@@ -110,4 +111,10 @@ gulp.task('cssBuild', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('moment', function() {
+  return gulp.src(['./js/scripts-interface.js'])
+  .pipe(moment())
+  .pipe(gulp.dest("./js"));
 });
