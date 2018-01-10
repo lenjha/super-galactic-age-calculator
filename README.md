@@ -21,6 +21,10 @@ $npm serve
 #### _This webpage uses HTML, CSS, SCSS, JS, and Karma/Jasmine_
 
 ## Plans for the Future
+#### _Life expectancy calculator based on lifestyle, sex, etc._
+#### _More planets_
+#### _Age and life expectancy of different organisms (dogs)_
+#### _How much life everything has left to live_
 
 ## License
 Copyright (c) 2018, **_{Lena Ha}_**
