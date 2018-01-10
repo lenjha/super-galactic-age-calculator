@@ -13,3 +13,9 @@ Return date of user's next birthday on each planet
 Return age of Keith Richards in dog years on Jupiter in 2073
 Average lifespan of a mayfly is 5 minutes - how any mayfly lifespans will a human user have lived, and compare it to current age of our sun (in Earth years)
 Give the application a solar theme!
+
+
+
+
+Please write tests for this project and use them to move your logic into a separate JS class file
+Please also include a readme in your resubmission.

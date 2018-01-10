@@ -1,7 +1,7 @@
 body {
   background: #333e51;
   color: white;
-  font-family: cute, sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -33,10 +33,5 @@ h1 {
 
 @font-face {
   font-family: notes;
-  src: url("../../..fonts/Cute_Notes.ttf");
-}
-
-@font-face {
-  font-family: cute;
-  src: url("fonts/Cute_Font.ttf");
+  src: url("./../../fonts/Cute_Notes.ttf");
 }
